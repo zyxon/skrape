@@ -1,19 +1,31 @@
 {
-  "name": "skrape",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zyxon/skrape.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zyxon/skrape/issues"
-  },
-  "homepage": "https://github.com/zyxon/skrape#readme"
+	"name": "skrape",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json",
+		"start": "qode ./dist/index.js",
+		"buildstart": "npm run build && npm run start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zyxon/skrape.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/zyxon/skrape/issues"
+	},
+	"homepage": "https://github.com/zyxon/skrape#readme",
+	"devDependencies": {
+		"@types/node": "^17.0.31",
+		"@typescript-eslint/eslint-plugin": "^5.23.0",
+		"@typescript-eslint/parser": "^5.23.0",
+		"eslint": "^8.15.0",
+		"typescript": "^4.6.4"
+	},
+	"dependencies": {
+		"@nodegui/nodegui": "^0.50.0"
+	}
 }
